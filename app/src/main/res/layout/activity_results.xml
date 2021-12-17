@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Results">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="Select degrees"
+                        android:textAlignment="center"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/rCel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:onClick="onClick"
+                        android:text="Celsius"
+                        android:textSize="20sp" />/>
+
+                    <RadioButton
+                        android:id="@+id/rFa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="onClick"
+                        android:text="Fahrenheit"
+                        android:textSize="20sp" />/>
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="City"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtTemp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Temperature"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtFL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Feels Like"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtHum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Humidity"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Description"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtWind"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Wind"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtClouds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Clouds"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/txtPressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="Pressure"
+                    android:textAlignment="center"
+                    android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="changeCity"
+                android:text="Change City"
+                android:textAlignment="center"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/changeday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="changeDay"
+                android:text="Change Day"
+                android:textAlignment="center"
+                android:textSize="32sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
